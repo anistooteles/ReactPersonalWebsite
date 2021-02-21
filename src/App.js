@@ -2,6 +2,7 @@ import './App.scss';
 
 import { useState } from 'react';
 import Navigation from './components/Navigation';
+import Banner from './components/Banner';
 
 const App = () => {
   const [state, setstate] = useState({ lang: 'eng', theme: 'light' });
@@ -19,6 +20,7 @@ const App = () => {
   return (
     <div className="App">
       <Navigation action={changeLight}></Navigation>
+      <Banner></Banner>
     </div>
   );
 };

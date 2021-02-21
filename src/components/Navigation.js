@@ -8,7 +8,7 @@ import ActionButton from './ActionButton';
 
 const Navigation = ({ action }) => {
   return (
-    <div>
+    <div className="nav-container">
       <a href="/" className="btn btn--border">
         <FontAwesomeIcon icon={faUserAstronaut} />
       </a>

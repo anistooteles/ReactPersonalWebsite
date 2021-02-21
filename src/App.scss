@@ -1,25 +1,61 @@
 $font-color: #444;
 $font-color-hover: #c66;
 
-.btn {
-  color: $font-color;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  height: 3.25rem;
-  padding: 0.25rem;
-  margin: 1.5rem;
-  font-size: 2rem;
-  width: 3.25rem;
+.App {
+  max-width: 760px;
+  min-width: 240px;
+  margin: 0 auto;
+  padding: 0;
 
-  &--hover {
-    &:hover {
-      color: $font-color-hover;
+  .btn {
+    color: $font-color;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 3.25rem;
+    padding: 0.25rem;
+    margin: 1.5rem;
+    font-size: 2rem;
+    width: 3.25rem;
+
+    &--hover {
+      &:hover {
+        color: $font-color-hover;
+      }
+    }
+
+    &--border {
+      border: solid $font-color 0.45rem;
+      border-radius: 0.25rem;
     }
   }
 
-  &--border {
-    border: solid $font-color 0.45rem;
-    border-radius: 0.25rem;
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    animation-name: slideDown;
+    animation-delay: 2.5s;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+  }
+
+  .banner {
+    background-image: url(./img/astronaut.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40vw;
+    max-height: 350px;
+    min-width: 240px;
+    min-height: 90px;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
