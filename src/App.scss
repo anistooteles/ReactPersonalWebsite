@@ -1,0 +1,25 @@
+$font-color: #444;
+$font-color-hover: #c66;
+
+.btn {
+  color: $font-color;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 3.25rem;
+  padding: 0.25rem;
+  margin: 1.5rem;
+  font-size: 2rem;
+  width: 3.25rem;
+
+  &--hover {
+    &:hover {
+      color: $font-color-hover;
+    }
+  }
+
+  &--border {
+    border: solid $font-color 0.45rem;
+    border-radius: 0.25rem;
+  }
+}
