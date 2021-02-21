@@ -19,7 +19,6 @@ const App = () => {
   return (
     <div className="App">
       <Navigation action={changeLight}></Navigation>
-      {JSON.stringify(state)}
     </div>
   );
 };
